@@ -4,7 +4,10 @@ import './Contact.css';
 function Contact() {
   return (
     <div className="Contact">
-      {/* Add your contact content here */}
+     
+     <h2 style={{color: "blue"}}>Contact</h2>
+      <p >Below is my contact information</p><br />
+
     </div>
   );
 }

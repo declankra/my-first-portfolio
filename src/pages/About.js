@@ -4,7 +4,10 @@ import './About.css';
 function About() {
   return (
     <div className="About">
-      {/* Add your about content here */}
+     
+     <h2 style={{color: "blue"}}>About</h2>
+      <p >About me</p><br />
+
     </div>
   );
 }
