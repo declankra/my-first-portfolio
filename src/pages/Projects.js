@@ -4,7 +4,10 @@ import './Projects.css';
 function Projects() {
   return (
     <div className="Projects">
-      {/* Add your projects content here */}
+      
+      <h2 style={{color: "blue"}}>Projects</h2>
+      <p >Below are my projects</p><br />
+
     </div>
   );
 }
