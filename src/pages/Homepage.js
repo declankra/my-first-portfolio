@@ -25,7 +25,7 @@ function Homepage() {
 
        <h1>Declan Kramper <Avatar /></h1> 
 
-       <p>I've built a website from scratch to highlight my my personal journey through my past and present work</p>
+       <p>I've built a website from scratch to highlight my personal journey through my past and present work</p>
 
 
     </div>

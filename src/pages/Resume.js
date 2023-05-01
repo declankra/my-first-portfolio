@@ -44,12 +44,13 @@ function Resume() {
         src={pdfResumePath}
         alt="Declan Kramper Resume"
         title="Resume"
-        width="80%"
+        width= "80%"
         height="800px"
         style={{ border: 'none' }}
       ></iframe>
       <br />
       <br />
+
      <h4>Business Analyst Resume </h4>
         <p>Last updated: xxx</p>
 
