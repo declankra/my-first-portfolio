@@ -18,7 +18,7 @@ import DoingNow from './components/DoingNow';
 function App() {
   return (
     <div className="App">
-        <Header/>
+        <Header/><br />
 
     <main>   
        <Homepage />
