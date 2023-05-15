@@ -3,8 +3,10 @@ import './Resume.css';
 
 
 function Resume() {
-  const pdfResumePath = process.env.PUBLIC_URL + 'DeclanKramper_Resume_11182022.pdf';
-/*
+  const pdfResume1Path = process.env.PUBLIC_URL + 'DeclanKramper_Resume_11182022.pdf';
+  const pdfResume2Path = process.env.PUBLIC_URL + 'DeclanKramper_Resume_05082023.pdf';
+
+  /*
   const styles = {
     main: {
       backgroundColor: "#f1f1f1",
@@ -37,11 +39,21 @@ function Resume() {
 
       <body>
 
+      <h4>Product Analyst/Development/Engineering Resume </h4>
+        <p>Last updated: 05/08/2023</p>
+      <iframe
+        src={pdfResume2Path}
+        alt="Declan Kramper Resume"
+        title="Resume"
+        width= "80%"
+        height="800px"
+        style={{ border: 'none' }}
+      ></iframe>
+  <br />  <br />
       <h4>Product Management Resume </h4>
         <p>Last updated: November 18, 2022</p>
-      
       <iframe
-        src={pdfResumePath}
+        src={pdfResume1Path}
         alt="Declan Kramper Resume"
         title="Resume"
         width= "80%"
@@ -50,9 +62,6 @@ function Resume() {
       ></iframe>
       <br />
       <br />
-
-     <h4>Business Analyst Resume </h4>
-        <p>Last updated: xxx</p>
 
       </body>
 

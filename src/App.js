@@ -23,7 +23,6 @@ function App() {
     <main>   
        <Homepage />
        <hr></hr>
-      
        <Projects /> 
        <hr></hr>
        <Resume />
