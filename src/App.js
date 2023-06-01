@@ -23,11 +23,11 @@ function App() {
     <main>   
        <Homepage />
        <hr></hr>
+       <About />
+       <hr></hr>
        <Projects /> 
        <hr></hr>
        <Resume />
-       <hr></hr>
-       <About />
        <hr></hr>
        <Contact />
        <hr></hr>
