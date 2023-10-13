@@ -1,28 +1,31 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import './Navbar.css';
+
 
 const Navbar = () => {
   return (
-    <nav>
-      <ul>
-        <li>
-          <Link to="./pages/Homepage">Home</Link>
-        </li>
-        <li>
-          <Link to="./pages/projects">Projects</Link>
-        </li>
-        <li>
-          <Link to="/resume">Resume</Link>
-        </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact</Link>
-        </li>
-      </ul>
-    </nav>
+    <div className="navbar">
+        <li><NavLink to="/" class activeStyle>Home</NavLink></li>
+        <li><NavLink to="/About" class activeStyle>About</NavLink></li>
+        <li><NavLink to="/Projects" class activeStyle>Projects</NavLink></li>
+        <li><NavLink to="/Resume" class activeStyle>Resume</NavLink></li>
+        <li><NavLink to="/Contact" class activeStyle>Contact</NavLink></li>
+    </div>
+    
   );
 };
 
 export default Navbar;
+
+/*
+
+import {
+  Nav,
+  Bars,
+  NavMenu,
+  NavBtn,
+  NavBtnLink,
+} from './NavbarElements';
+
+*/

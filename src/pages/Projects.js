@@ -1,12 +1,17 @@
 import React from 'react';
 import './Projects.css';
+import { pageTitleStyle } from '../styles/sharedStyles';
 
 function Projects() {
   return (
     <div className="Projects">
       
-      <h2 style={{color: "blue"}}>Projects</h2>
-      <p >Below are my projects</p><br />
+      <main>
+
+      <h2 style={pageTitleStyle}>Projects</h2>
+      <p >Will throw some here</p><br />
+
+      </main>
 
     </div>
   );

@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import styled from 'styled-components'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, } from 'react-router-dom';
 import Header from './components/navbar/Header';
 import Navbar from './components/navbar/Navbar';
 import Homepage from './pages/Homepage';
@@ -13,31 +13,26 @@ import Footer from './components/Footer';
 import Changelog from './components/Changelog';
 import Contact from './pages/Contact';
 import DoingNow from './components/DoingNow';
- 
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
     <div className="App">
-        <Header/><br />
+            <Navbar />
+            <Routes>
+                <Route path="/" element={<Homepage />} />                
+                <Route path="/About" element={<About />} />
+                <Route path="/Resume" element={<Resume />} />
+                <Route path="/Projects" element={<Projects />} />
+                <Route path="/Contact" element={<Contact />} />
+                <Route path="*" element={<NotFound />} />
+            </Routes>
 
-    <main>   
-       <Homepage />
-       <hr></hr>
-       <About />
-       <hr></hr>
-       <Projects /> 
-       <hr></hr>
-       <Resume />
-       <hr></hr>
-       <Contact />
-       <hr></hr>
-    </main> 
-
-        <Footer />
-
+            <Footer />
     </div>
-  );
-}
+);
+  }
+  
 export default App;
 
 

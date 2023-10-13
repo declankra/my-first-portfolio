@@ -1,13 +1,23 @@
+
+
 .Resume {
 background-color: white
 }
+
 iframe {
     margin: 0 auto;
     display: block;
 }
-main {
-text-align: left;
-}
-body {
+
+.Resume picture {
 text-align: center;
 }
+
+.Resume body {
+text-align: center;
+}
+
+.Resume main {
+    text-align: center;
+}
+    

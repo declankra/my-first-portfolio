@@ -1,12 +1,13 @@
 import React from 'react';
 import './Contact.css';
+import { pageTitleStyle } from '../styles/sharedStyles';
 
 function Contact() {
   return (
     <div className="Contact">
      
-     <h2 style={{color: "blue"}}>Contact</h2>
-      <p >Below is my contact information</p><br />
+     <h2 style={pageTitleStyle}>Contact</h2>
+      <p >call me maybe</p><br />
 
     </div>
   );
