@@ -1,23 +1,59 @@
-
-
 .Resume {
-background-color: white
+    background-color: white
 }
 
-iframe {
+.Resume section {
+    margin-top: 20px;
+    border-color: cadetblue;
+    border-radius: 10px;
+}
+
+.Resume iframe {
     margin: 0 auto;
     display: block;
 }
 
 .Resume picture {
-text-align: center;
+    text-align: center;
 }
 
 .Resume body {
-text-align: center;
+    text-align: center;
 }
 
 .Resume main {
     text-align: center;
 }
-    
+
+.iframe-container {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+    height: fit-content;
+}
+
+.iframe-title {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.iframe-sub-title {
+    text-align: center;
+    font-size: 1.0em;
+    margin-bottom: 10px;
+}
+
+.iframe-side-by-side {
+    display: block;
+    width: 100%;
+    height: 550px;
+}
+
+@media (max-width: 768px) {
+    .iframe-side-by-side {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
