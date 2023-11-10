@@ -8,10 +8,10 @@ function Avatar() {
 
     <img className="avatar"
       src={avatarPath}
-      alt={'Me'}
+      alt={'Declan Kramper Headshot'}
       title="Avatar"
       style={{
-        resizeMode: 'center',
+        resizeMode: 'centser',
         width: 125,
         height: 125
       }}
