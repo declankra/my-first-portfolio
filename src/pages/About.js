@@ -15,7 +15,7 @@ function About() {
       </main>
 
       <body>
-        <p>re-thinking what the purpose of each page is...and what my purpose is...</p>
+        <p>re-thinking what the purpose of each page is...</p>
         <br/>
         <br/>
 

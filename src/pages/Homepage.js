@@ -1,6 +1,7 @@
 import React from 'react';
 import './Homepage.css';
 import DoingNow from '../components/DoingNow';
+import Changelog from '../components/Changelog';
 
 function Avatar() {
   const avatarPath = process.env.PUBLIC_URL + 'Avatar_Me_PS_Blue.png';
@@ -37,6 +38,7 @@ function Homepage() {
       <body>
         <DoingNow></DoingNow>
 
+        <Changelog></Changelog>
       </body>
 
 

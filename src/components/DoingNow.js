@@ -6,15 +6,14 @@ function DoingNow() {
   
   return (
     // import apple watch data here
+    // import strava runs here
 
     <div className="DoingNow">
     
-    <section>
-     <h4 style={pageH3Style}>What am I doing now?</h4>
-
-
-    </section>
-
+     <h3 style={pageH3Style}>What am I doing now?</h3>
+      <br></br>
+      <br></br>
+      <br></br>
 
     </div>
   );
