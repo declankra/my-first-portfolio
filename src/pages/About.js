@@ -1,7 +1,7 @@
 import React from 'react';
 import './About.css';
 import { pageH2Style } from '../styles/sharedStyles';
-import Resume from './Resume';
+import Resume from '../components/Resume';
 import Contact from './Contact';
 
 function About() {
