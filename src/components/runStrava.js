@@ -5,6 +5,8 @@ import './runStrava.css';
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
+/*
+
 const runStrava = () => {
   const [runData, setRunData] = useState(null);
 
@@ -38,9 +40,11 @@ const runStrava = () => {
       <h2>My Most Recent Run</h2>
       <p>Distance: {runData.distance} meters</p>
       <p>Duration: {runData.moving_time} seconds</p>
-      {/* Add more details as needed */}
+      {add more details as needed}
     </div>
   );
 };
 
 export default runStrava;
+
+*/
