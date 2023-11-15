@@ -1,0 +1,3 @@
+
+- jsx = javascript that allows you to write HTML using react components. so it converts HTML into react components
+>>>>>>> Stashed changes
