@@ -1,21 +1,28 @@
 import React from 'react';
 import './About.css';
-import { pageTitleStyle } from '../styles/sharedStyles';
+import { pageH2Style } from '../styles/sharedStyles';
+import Resume from './Resume';
+import Contact from './Contact';
 
 function About() {
   return (
     <div className="About">
-    
-    <main>
-    <h2 style={pageTitleStyle}>About</h2>
-  
-    </main>
 
-    <body>
-    <p>re-thinking what the purpose of each page is...</p>
+      <main>
+        <h2 style={pageH2Style}>About</h2>
+       
 
-     
-    </body>
+      </main>
+
+      <body>
+        <p>re-thinking what the purpose of each page is...and what my purpose is...</p>
+        <br/>
+        <br/>
+
+        <Resume/>
+        <Contact />
+
+      </body>
     </div>
   );
 }

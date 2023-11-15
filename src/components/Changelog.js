@@ -4,7 +4,13 @@ import './Changelog.css';
 function Changelog() {
   return (
     <div className="Changelog">
-      {/* Add your changelog content here */}
+      {
+        
+      
+      
+      
+      
+      }
     </div>
   );
 }

@@ -1,18 +1,19 @@
 import React from 'react';
 import './Resume.css';
-import { pageTitleStyle } from '../styles/sharedStyles';
+import { pageH3Style, pageH4Style } from '../styles/sharedStyles';
 
 
-//react component for iFrame resumes
-function IframeComponent(props) {
+// React component for iFrame resumes
+function IframeComponent({ src, title, subTitle }) {
   return (
-    <div className="iframe-container">
-      <h4 className="iframe-title">{props.title}</h4>
-      <p className="iframe-sub-title">{props.subTitle}</p>
-      <iframe src={props.src} className="iframe-side-by-side"></iframe>
+    <div className="iframe-wrapper">
+      <h4 className="iframe-title">{title}</h4>
+      <p className="iframe-sub-title">{subTitle}</p>
+      <iframe src={src} title = {title} className="iframe-side-by-side"></iframe>
     </div>
   );
 }
+
 
 
 function Resume() {
@@ -23,33 +24,30 @@ function Resume() {
   return (
 
     <div className="Resume">
-
       <main>
-
-        <h2 style={pageTitleStyle}>Resume</h2>
+        <h2 style={pageH3Style}>Resume</h2>
         <p >Below are the boring conventional resumes</p><br />
-
       </main>
 
 
       <body>
-
-        <IframeComponent
-          src={pdfResume2Path}
-          title="Product Analyst/Development/Engineering Resume"
-          subTitle="Last updated: 05/08/2023"
-        />
-        <IframeComponent
-          src={pdfResume1Path}
-          title="Product Management Resume"
-          subTitle="Last updated: November 18, 2022"
-        />
-
+        <div className="iframe-container"> {/* This div will wrap both iframes */}
+          <IframeComponent
+            src={pdfResume2Path}
+            title="Product Analyst/Development/Engineering Resume"
+            subTitle="Last updated: 05/08/2023"
+          />
+          <IframeComponent
+            src={pdfResume1Path}
+            title="Product Management Resume"
+            subTitle="Last updated: November 18, 2022"
+          />
+        </div>
       </body>
 
 
       <section>
-        <h2 style={pageTitleStyle}>Employee Summary</h2>
+        <h2 style={pageH4Style}>Employee Summary</h2>
         <p style={{ fontWeight: "bold" }}>command c + command v from my <a href="https://www.linkedin.com/in/declan-kramper/">linkedin bio</a> </p>
 
         <p>

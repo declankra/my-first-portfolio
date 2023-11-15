@@ -5,7 +5,6 @@ import DoingNow from '../components/DoingNow';
 function Avatar() {
   const avatarPath = process.env.PUBLIC_URL + 'Avatar_Me_PS_Blue.png';
   return (
-
     <img className="avatar"
       src={avatarPath}
       alt={'Declan Kramper Headshot'}
@@ -21,7 +20,6 @@ function Avatar() {
 
 const nameStyle = {
   fontWeight: "bold",
-
 }
 
 function Homepage() {
@@ -33,7 +31,7 @@ function Homepage() {
       <header>
         <h1 style={nameStyle}>Declan Kramper  <Avatar /></h1>
         <p>I've built a website from scratch to highlight my personal journey through my past and present work</p>
-
+        <br />
       </header>
 
       <body>

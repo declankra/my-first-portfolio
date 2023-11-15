@@ -16,7 +16,7 @@ import DoingNow from './components/DoingNow';
 import NotFound from './pages/NotFound';
 import TagManager from 'react-gtm-module'
 
-// Add googe tag manager for GUA 4
+// Add google tag manager for GUA 4
 const tagManagerArgs = {
   gtmId: 'G-YVX9YT52JE'
 }
@@ -29,10 +29,10 @@ function App() {
             <Navbar />
             <Routes>
                 <Route path="/" element={<Homepage />} />                
-                <Route path="/About" element={<About />} />
-                <Route path="/Resume" element={<Resume />} />
                 <Route path="/Projects" element={<Projects />} />
+                <Route path="/About" element={<About />} />
                 <Route path="/Contact" element={<Contact />} />
+                <Route path="/Resume" element={<Resume/>}/>
                 <Route path="*" element={<NotFound />} />
             </Routes>
 

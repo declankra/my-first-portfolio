@@ -1,7 +1,7 @@
 
 # Have fun
 The more i mess around with the website and just do whatever seems fun = i have more fun, more likley to stick to it, and more unique it becomes
-    --> lets make it fun :)
+    --> lets make it fun (smiley face)
 
 # Next up
 - add strava running API 
