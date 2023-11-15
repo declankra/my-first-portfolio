@@ -5,6 +5,17 @@ import './runStrava.css';
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
+
+function runStrava() {
+return (
+  <div className = "runStrava">
+    <p>strava data coming soon...</p>
+    
+  </div>
+
+  );
+}
+export default runStrava;
 /*
 
 const runStrava = () => {

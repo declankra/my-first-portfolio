@@ -11,6 +11,7 @@ function DoingNow() {
     <div className="DoingNow">
     
      <h3 style={pageH3Style}>What am I doing now?</h3>
+      <runStrava />
       <br></br>
       <br></br>
       <br></br>
