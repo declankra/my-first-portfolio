@@ -1,45 +1,29 @@
-import React from 'react';
-import './runStrava.css';
-
-
 import React, { useState, useEffect } from 'react';
+import './runStrava.css';
 import axios from 'axios';
 
-
-function runStrava() {
-return (
-  <div className = "runStrava">
-    <p>strava data coming soon...</p>
-    
-  </div>
-
-  );
-}
-export default runStrava;
-/*
-
-const runStrava = () => {
+function RunStrava() {
   const [runData, setRunData] = useState(null);
 
   useEffect(() => {
-    const fetchStravaData = async () => {
+    const fetchRunData = async () => {
       try {
-        // Replace with your token and endpoint
-        const token = 'YOUR_ACCESS_TOKEN';
-        const response = await axios.get('https://www.strava.com/api/v3/athlete/activities', {
-          headers: { Authorization: `Bearer ${token}` }
-        });
-
+        const response = await axios.get('/strava/runs');
         const runs = response.data.filter(activity => activity.type === 'Run');
         if (runs.length > 0) {
-          setRunData(runs[0]); // Assuming the first one is the most recent
+          // Assuming the first one is the most recent run and converting distance from meters to miles
+          const recentRun = {
+            ...runs[0],
+            distance: (runs[0].distance / 1609.34).toFixed(2) // Convert meters to miles
+          };
+          setRunData(recentRun);
         }
       } catch (error) {
-        console.error('Error fetching data from Strava:', error);
+        console.error('Error fetching run data:', error);
       }
     };
 
-    fetchStravaData();
+    fetchRunData();
   }, []);
 
   if (!runData) {
@@ -47,15 +31,13 @@ const runStrava = () => {
   }
 
   return (
-    <div>
+    <div className="runStrava">
       <h2>My Most Recent Run</h2>
-      <p>Distance: {runData.distance} meters</p>
-      <p>Duration: {runData.moving_time} seconds</p>
-      {add more details as needed}
+      <p>Distance: {runData.distance} miles</p>
+      <p>Duration: {new Date(runData.moving_time * 1000).toISOString().substr(11, 8)} (hh:mm:ss)</p>
+      {/* Add more details as needed */}
     </div>
   );
-};
+}
 
-export default runStrava;
-
-*/
+export default RunStrava;
