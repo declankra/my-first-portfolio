@@ -1,0 +1,22 @@
+# this file is referenced with 'gloud app deploy'
+
+runtime: nodejs20  # or whichever version of Node.js you are using
+
+env: standard  # 'standard' for Standard Environment, 'flex' for Flexible Environment
+
+instance_class: F1  # Instance class, F1 is the smallest and the default
+
+# Environment variables:
+env_variables:
+  STRAVA_CLIENT_ID: '116788'
+  STRAVA_CLIENT_SECRET: 'd45d47cadc52ade5cc955af9675d363d1f76467a'
+  STRAVA_REFRESH_TOKEN: 'e585d0dfd6d5794f52e2fdb42f086e6aada646355'
+
+automatic_scaling:
+  target_cpu_utilization: 0.6
+  min_instances: 0
+  max_instances: 2
+
+handlers:
+- url: /.*
+  script: auto
