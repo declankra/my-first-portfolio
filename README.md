@@ -1,3 +1,12 @@
+
+# Have fun
+The more i mess around with the website and just do whatever seems fun = i have more fun, more likley to stick to it, and more unique it becomes
+    --> lets make it fun (smiley face)
+
+# Next up
+- add strava running API 
+
+---------------------
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

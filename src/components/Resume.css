@@ -1,0 +1,57 @@
+.Resume {
+    background-color: white
+}
+
+.Resume main {
+    text-align: center;
+}
+
+/* Add a margin or padding to the container to ensure it doesn't touch the edges */
+.Resume section {
+    margin-top: 20px;
+    border-color: cadetblue;
+    border-radius: 10px;
+}
+
+
+.iframe-container {
+    display: flex;
+    justify-content: space-around; /* This will provide equal spacing around your iframes */
+}
+.iframe-wrapper {
+    /* This class is for the div that wraps each title and iframe pair */
+    /* Set this to less than 50% if there's a margin or padding */
+    width: 45%; /* Adjust the width as needed, so two wrappers fit side by side */
+    text-align: center; /* Centers the text of the title */
+    margin-bottom: 20px; /* Optional margin at the bottom */
+  }
+  
+
+.iframe-title {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.iframe-sub-title {
+    font-size: .9em;
+    margin-bottom: 10px;
+}
+
+.iframe-side-by-side {
+    width: 100%; /* The iframe takes up the full width of its .iframe-wrapper parent */
+    height: 550px; /* Adjust height as necessary */
+}
+
+@media (max-width: 768px) {
+    .iframe-container {
+      flex-direction: column; /* Stack vertically on smaller screens */
+    }
+  
+    .iframe-side-by-side {
+        width: 100%; /* Full width on mobile */
+        margin-bottom: 20px; /* Space between stacked iframes - adjust as needed*/
+    }
+    .iframe-wrapper {
+        width: 100%; /* Full width on mobile */
+      }
+  }

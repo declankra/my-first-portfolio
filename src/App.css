@@ -9,3 +9,10 @@
   }
 
   */
+
+  p {
+    color: black;
+    font-family: 'Arial';
+    padding: 1em; /* This will add padding to all <p> elements in your application */
+  }
+  

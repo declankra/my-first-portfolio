@@ -1,3 +1,32 @@
 .Contact {
     text-align: center;
 }
+
+.Contact p:first-of-type {
+    margin-bottom: 0;
+  }
+  
+  .emailButton,
+.callButton {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f2f4f4;
+  color: #333;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.emailButton:hover {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.callButton:hover {
+  background-color: #2ecc71;
+  color: #fff;
+}
+
+/* Add additional styles for font, shadows etc. as per your design */
