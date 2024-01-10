@@ -10,7 +10,7 @@ let accessToken = null;
 let lastRefresh = 0; // Timestamp of the last refresh
 
 // Refresh the access token
-const refreshAccessToken = async () => {
+const refreshStravaAccessToken = async () => {
     try {
         const response = await axios.post('https://www.strava.com/oauth/token', {
             client_id: process.env.STRAVA_CLIENT_ID,
@@ -33,7 +33,7 @@ const ensureFreshToken = async (req, res, next) => {
     try {
         // Refresh the token every 24 hours (24 * 60 * 60 * 1000 milliseconds)
         if (!accessToken || Date.now() - lastRefresh >= 24 * 60 * 60 * 1000) {
-            await refreshAccessToken();
+            await refreshStravaAccessToken();
         }
         next();
     } catch (error) {
@@ -61,6 +61,7 @@ app.get('/strava/runs', ensureFreshToken, async (req, res) => {
     } catch (error) {
         console.error('Failed to fetch activities:', error);
         res.status(500).json({ error: 'Failed to fetch activities' });
+
     }
 });
 

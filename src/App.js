@@ -1,18 +1,13 @@
 import React from 'react';
 import './App.css';
-import styled from 'styled-components'
 import { BrowserRouter as Router, Routes, Route, } from 'react-router-dom';
-import Header from './components/navbar/Header';
 import Navbar from './components/navbar/Navbar';
 import Homepage from './pages/Homepage';
 import Resume from './components/Resume';
 import Projects from './pages/Projects';
-import DataVisualization from './components/DataVisualization';
 import About from './pages/About';
 import Footer from './components/Footer';
-import Changelog from './components/Changelog';
 import Contact from './pages/Contact';
-import DoingNow from './components/DoingNow';
 import NotFound from './pages/NotFound';
 import TagManager from 'react-gtm-module'
 

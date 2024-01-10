@@ -37,9 +37,8 @@ function Homepage() {
 
       <body>
         <DoingNow />
-        <runStrava />
+        <Changelog />
 
-        <Changelog></Changelog>
       </body>
 
 

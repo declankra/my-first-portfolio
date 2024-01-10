@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './runStrava.css';
+import './RunStrava.css';
 import axios from 'axios';
 
 function RunStrava() {
@@ -31,7 +31,7 @@ function RunStrava() {
   }
 
   return (
-    <div className="runStrava">
+    <div className="RunStrava">
       <h2>My Most Recent Run</h2>
       <p>Distance: {runData.distance} miles</p>
       <p>Duration: {new Date(runData.moving_time * 1000).toISOString().substr(11, 8)} (hh:mm:ss)</p>
