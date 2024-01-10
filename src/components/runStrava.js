@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './RunStrava.css';
+import './runStrava.css';
 import axios from 'axios';
 
 function RunStrava() {
