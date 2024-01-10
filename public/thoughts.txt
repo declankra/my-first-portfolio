@@ -1,3 +1,7 @@
+<<<<<<< Updated upstream
+jsx = javascript that allows you to write HTML using react components. so it converts HTML into react components
+=======
+
 
 Thoughts
 - the more i mess around with the website and jsut do whatever seems fun = the more fun i will have and the more unique it will be
@@ -6,3 +10,4 @@ Thoughts
 
 Notes
 - jsx = javascript that allows you to write HTML using react components. so it converts HTML into react components
+>>>>>>> Stashed changes
