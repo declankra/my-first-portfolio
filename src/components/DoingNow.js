@@ -1,6 +1,6 @@
 import React from 'react';
 import './DoingNow.css';
-import RunStrava from './RunStrava';
+import RunStrava from './runStrava.js';
 
 
 
