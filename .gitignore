@@ -2,6 +2,7 @@
 
 # server - private info
 server/.env/
+server/.env
 /server/.env/
 .env
 
