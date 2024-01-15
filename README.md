@@ -1,4 +1,7 @@
 
+# 1/15/24 ARCHIVING
+This was fun to create something that i published, but i went way too fast in the beginning and never got the basic understanding down. it is now way too messy, and i am going to start fresh with a new portfiolo website project. i learned a good breadth, got exposure to terms and processes, but can't say i know how to do it myself or be able to explain it in simple terms (why im starting over, and going slowly)
+
 # Have fun
 The more i mess around with the website and just do whatever seems fun = i have more fun, more likley to stick to it, and more unique it becomes
     --> lets make it fun (smiley face)
